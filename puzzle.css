@@ -22,7 +22,7 @@ body {
 }
 
 #board img {
-    width: 19.5%;
+    width: 19%;
     height: auto;
     border: 0.5px solid lightblue;
 }
@@ -39,8 +39,8 @@ body {
 }
 
 #pieces img {
-    width: 79px;
-    height: 79px;
+    width: 75px;
+    height: 75px;
     border: 0.5px solid lightblue;
 }
 
@@ -48,25 +48,25 @@ body {
 @media only screen and (max-width: 600px) {
     #board {
         border: none;
-        width: 600px;
+        width: 399px;
         padding: 5px;
     }
 
     #pieces {
         border: none;
         padding: 5px;
-        width: 405px;
+        width: 385px;
         height: auto;
     }
 
     #text {
         border: none;
         font-size: 40px;
-        /* margin: 1%; */
-        width: 405px;
+        margin: 1%;
+        width: auto;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     #hr{
-        width: 405px;
+        width: 390px;
     }
 }

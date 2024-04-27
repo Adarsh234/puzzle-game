@@ -4,28 +4,28 @@ body {
     background-color: aqua;
 }
 
-#text{
+#text {
     font-size: 55px;
     margin: 1%;
+    align-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #board {
-    width: 405px;
-    height: 405px;
+    width: 100%;
+    max-width: 405px;
+    height: auto;
     border: 2px solid purple;
-
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 #board img {
-    width: 79px;
-    height: 79px;
+    width: 19.5%;
+    height: auto;
     border: 0.5px solid lightblue;
 }
-
 
 #pieces {
     width: 1053px;
@@ -42,4 +42,31 @@ body {
     width: 79px;
     height: 79px;
     border: 0.5px solid lightblue;
+}
+
+/* ----------------------------small screen------------------------ */
+@media only screen and (max-width: 600px) {
+    #board {
+        border: none;
+        width: 600px;
+        padding: 5px;
+    }
+
+    #pieces {
+        border: none;
+        padding: 5px;
+        width: 405px;
+        height: auto;
+    }
+
+    #text {
+        border: none;
+        font-size: 40px;
+        /* margin: 1%; */
+        width: 405px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #hr{
+        width: 405px;
+    }
 }
